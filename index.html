@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Observatorio Económico UAC</title>
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#003366;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.card h3{
+margin-top:0;
+color:#003366;
+}
+
+.valor{
+font-size:32px;
+font-weight:bold;
+color:#0066cc;
+}
+
+.fecha{
+font-size:12px;
+color:#666;
+margin-top:10px;
+}
+
+button{
+background:#003366;
+color:white;
+border:none;
+padding:10px;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#0055aa;
+}
+
+.seccion{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📊 Observatorio Económico UAC</h1>
+
+<p>
+Laboratorio de Actualidad Económica
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+
+<h3>📈 Inflación</h3>
+
+<p class="valor">
+6,29%
+</p>
+
+<p class="fecha">
+Fuente: DANE
+</p>
+
+<p>
+La inflación continúa descendiendo y acercándose gradualmente a la meta del Banco de la República.
+</p>
+
+<button onclick="analizarInflacion()">
+🤖 Analizar
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>💵 Tasa BanRep</h3>
+
+<p class="valor">
+12,25%
+</p>
+
+<p class="fecha">
+Fuente: Banco de la República
+</p>
+
+<p>
+La tasa continúa en niveles restrictivos para controlar la inflación.
+</p>
+
+<button onclick="analizarBanrep()">
+🤖 Analizar
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>💲 TRM</h3>
+
+<p class="valor">
+$ 3.237,83
+</p>
+
+<p class="fecha">
+Actualizado: 09/11/2026
+</p>
+
+<p>
+Un dólar alto favorece exportaciones y encarece las importaciones.
+</p>
+
+<button onclick="analizarTRM()">
+🤖 Analizar
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>📉 PIB</h3>
+
+<p class="valor">
+3,5%
+</p>
+
+<p class="fecha">
+Fuente: DANE
+</p>
+
+<p>
+La economía colombiana mantiene una expansión moderada.
+</p>
+
+<button onclick="analizarPIB()">
+🤖 Analizar
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>👨‍💼 Desempleo</h3>
+
+<p class="valor">
+8,0%
+</p>
+
+<p class="fecha">
+Fuente: DANE
+</p>
+
+<p>
+El mercado laboral muestra una recuperación gradual.
+</p>
+
+<button onclick="analizarDesempleo()">
+🤖 Analizar
+</button>
+
+</div>
+
+</div>
+
+<div class="seccion">
+
+<h2>📰 Coyuntura Económica</h2>
+
+<p>
+Este espacio integrará noticias económicas relevantes, análisis de coyuntura y relación directa con los contenidos de Moneda y Banca.
+</p>
+
+</div>
+
+<div class="seccion">
+
+<h2>🏦 Fuentes Oficiales</h2>
+
+<ul>
+<li>Banco de la República</li>
+<li>DANE</li
